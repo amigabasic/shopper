@@ -1,4 +1,4 @@
-# Shopper 1.0.1
+# Shopper 1.0.2
 
 A retro shopping list app written in Python on an Amiga 500 using Workbench 1.3 and ED 1.14.
 
@@ -7,12 +7,12 @@ A retro shopping list app written in Python on an Amiga 500 using Workbench 1.3 
 - Add, remove, and list shopping items.
 - Random item generator.
 - Add custom items.
+- Local saving to file.
 
 ## Environment
 
 - Python (written in ED 1.14).
 - Amiga Workbench 1.3.
-- No IDE, no internet, just code.
 
 ## Author
 
