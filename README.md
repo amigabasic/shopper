@@ -5,10 +5,10 @@ A retro shopping list app written in Python on an Amiga 500 using Workbench 1.3 
 ## Screenshots
 
 **1.0.2 Running in Python3 in PowerShell (Windows)**  
-![Shopper PowerShell](images/shopper_powershell.png)
+![PowerShell](https://github.com/amigabasic/shopper/blob/main/shopper_powershell.png?raw=true)
 
 **Coding 1.0.2 in Ed on Amiga Workbench 1.3**  
-![Ed Workbench](images/shopper_ed_workbench.png)
+![Workbench ED](https://github.com/amigabasic/shopper/blob/main/shopper_ed_workbench.png?raw=true)
 
 ## Features
 
