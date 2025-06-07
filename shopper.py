@@ -1,5 +1,5 @@
 """
-Project: Shopping List App
+Project: Shopping List App 1.0.2
 Author: Ryan Younger
 Environment: Coded in Ed 1.14 on Amiga Workbench 1.3
 Year: 2025
@@ -18,8 +18,15 @@ def clear():
 
 def main():
    clear()
-   print('------Shopper 1.0.1------')
-   input('Press Enter to start your list')
+   print('###############Shopper 1.0.2###############')
+   print('#                                         #')
+   print('#              Press Enter                #')
+   print('#              to start your              #')
+   print('#              list!                      #')
+   print('#                                         #')
+   print('###########################################')
+   print('\nYour shopping lists, if saved, will be stored in:\n',os.getcwd())
+   input()
    shopper()
 
 
@@ -27,7 +34,8 @@ def shopper():
 
    while True:
       clear()
-      userinput = input('Commands: add , del , list, quit:  ').strip().lower()
+      print('Commands: add, del, list, save, quit')
+      userinput = input('Shopper:> ').strip().lower()
 
       if userinput == 'add':
          addfunction()
@@ -38,12 +46,22 @@ def shopper():
       elif userinput == 'del':
          delfunction()
 
+      elif userinput=='save':
+         savelist()
+
       elif userinput == 'quit':
          break
 
       else:
          print('Command not recognised')
 
+def savelist(filename='shoppinglist.txt'):
+   with open(filename, "w", encoding='utf-8') as f:
+      for item in shoppinglist:
+         f.write('[ ]' + item + '\n')
+      print('File written to: ',os.getcwd())
+      input('Press Enter key to continue')
+      return
 
 def delfunction():
 
@@ -54,7 +72,7 @@ def delfunction():
    
    else:
       print(shoppinglist)
-      delitem = input('Delete which item?')
+      delitem = input('Delete which item?\nShopper:> ')
 
       try:
          shoppinglist.remove(delitem)
@@ -70,9 +88,14 @@ def delfunction():
 def addfunction():
 
    while True:
-      print('Choose an item to add:')
-      print('1.milk \n2.butter \n3.cheese \n4.custom \n5.random \n6.mainmenu')
-      addchoice=input().strip().lower()
+      print('Choose an item to add:\n')
+
+      #More items can be added in the menu here:
+
+      print('1.milk \n2.butter \n3.cheese \n4.custom \n5.I\'m feeling lucky \n6.main menu\n')
+      addchoice=input('Shopper:> ').strip().lower()
+
+      #Menu actions:
 
       if addchoice == '1':
          shoppinglist.append('milk')
@@ -122,7 +145,7 @@ def listfunction():
    for listitem in shoppinglist:
       print ('[ ] ' + listitem)
 
-   markcompleted = input('mark an item as purchased? (y/n): ').strip().lower()
+   markcompleted = input('mark an item as purchased? (y/n)\nShopper:> ').strip().lower()
       
    if markcompleted == 'n':
 
@@ -130,7 +153,7 @@ def listfunction():
 
    else:
 
-      item_to_complete = input('Which item?').strip().lower()
+      item_to_complete = input('Which item?\nShopper:> ').strip().lower()
 
       if item_to_complete in shoppinglist:
             print (item_to_complete + ' Has been purchased!')
