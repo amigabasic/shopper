@@ -1,4 +1,4 @@
-# Shopper 1.0
+# Shopper 1.0.1
 
 A retro shopping list app written in Python on an Amiga 500 using Workbench 1.3 and ED 1.14.
 
