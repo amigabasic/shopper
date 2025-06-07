@@ -18,7 +18,7 @@ def clear():
 
 def main():
    clear()
-   print('------Shopper 1.0------')
+   print('------Shopper 1.0.1------')
    input('Press Enter to start your list')
    shopper()
 
