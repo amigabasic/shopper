@@ -46,6 +46,13 @@ def shopper():
 
 
 def delfunction():
+
+   if not shoppinglist:
+      print('No items in list!')
+      input('Press Enter to continue')
+      return
+   
+   else:
       print(shoppinglist)
       delitem = input('Delete which item?')
 
