@@ -21,6 +21,7 @@ A python retro shopping list app written using ED 1.14 on Workbench 1.3.
 
 - Python (written in ED 1.14).
 - Amiga Workbench 1.3.
+- Python3 in Windows 10 PowerShell to test the program.
 
 ## Author
 
