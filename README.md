@@ -2,6 +2,13 @@
 
 A python retro shopping list app written using ED 1.14 on Workbench 1.3.
 
+## 🎥 Demo Video
+
+Check out a live demo of the task list app:
+
+[![Watch the video](https://img.youtube.com/vi/wTLIQO6C0bA/0.jpg)](https://www.youtube.com/watch?v=wTLIQO6C0bA)
+
+
 ## Screenshots
 
 **1.0.2 Running in Python3 in PowerShell (Windows)**  
